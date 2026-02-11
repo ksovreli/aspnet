@@ -1,0 +1,16 @@
+﻿@model datasource_aspnet_efcore.Models.Entities.TodoListItem
+@{
+	ViewData["Title"] = "Create method page.";
+}
+
+<h1>Add new list</h1>
+
+<form method="post" asp-action="Create">
+	<label for="">Title</label>
+	<input placeholder="Title" asp-for="@Model.Title">
+
+	<label for="">Description</label>
+	<input placeholder="Description" asp-for="@Model.Description">
+
+	<button type="submit">Save</button>
+</form>
